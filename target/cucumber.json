@@ -1,0 +1,507 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2052454900,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefs.LoginSauceDmoStepDef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 165115600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I enter username as \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.LoginSauceDmoStepDef.i_enter_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103075400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.LoginSauceDmoStepDef.i_enter_password_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126087500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login",
+            "match": {
+              "location": "stepdefs.LoginSauceDmoStepDef.click_on_login()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-21T10:01:46.784Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2668889800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Login Success Scenario using parameters",
+        "description": "",
+        "id": "this-feature-will-be-used-to-test-the-add-to-cart-functionlity-of-saucedemo.com;login-success-scenario-using-parameters",
+        "after": [
+          {
+            "result": {
+              "duration": 778571300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24018900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click Add to cart in \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefs.AddToCartStepDef.i_click_Add_to_cart_in(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82057700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click add to cart for product \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepdefs.AddToCartStepDef.i_click_add_to_cart_for_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44029300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should be able to see the product as \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefs.AddToCartStepDef.i_should_be_able_to_see_the_product_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "This feature will be used to test the add to cart functionlity of saucedemo.com",
+    "description": "",
+    "id": "this-feature-will-be-used-to-test-the-add-to-cart-functionlity-of-saucedemo.com",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/AddToCart.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-21T10:01:52.940Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1440020900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login Success Scenario using parameters",
+        "description": "",
+        "id": "this-feature-will-be-used-to-test-the-login-functionlity-of-saucedemo.com;login-success-scenario-using-parameters",
+        "after": [
+          {
+            "result": {
+              "duration": 719508000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2199559200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefs.LoginSauceDmoStepDef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 171119800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter username as \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.LoginSauceDmoStepDef.i_enter_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 96057400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.LoginSauceDmoStepDef.i_enter_password_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124087400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on login",
+            "match": {
+              "location": "stepdefs.LoginSauceDmoStepDef.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9006900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should be able to login successfully",
+            "match": {
+              "location": "stepdefs.LoginSauceDmoStepDef.i_should_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-21T10:01:57.712Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1275905600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Login Success Scenario using parameters",
+        "description": "",
+        "id": "this-feature-will-be-used-to-test-the-login-functionlity-of-saucedemo.com;login-success-scenario-using-parameters;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 677497400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2090481800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefs.LoginSauceDmoStepDef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 129090500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter username as \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.LoginSauceDmoStepDef.i_enter_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77055100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter password as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.LoginSauceDmoStepDef.i_enter_password_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73052200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click on login",
+            "match": {
+              "location": "stepdefs.LoginSauceDmoStepDef.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36024600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should get error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefs.LoginSauceDmoStepDef.i_should_get_error_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-21T10:02:02.084Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1661176200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Login Success Scenario using parameters",
+        "description": "",
+        "id": "this-feature-will-be-used-to-test-the-login-functionlity-of-saucedemo.com;login-success-scenario-using-parameters;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 731518400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2299630500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefs.LoginSauceDmoStepDef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 144102100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter username as \"locked_out_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"locked_out_user\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.LoginSauceDmoStepDef.i_enter_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 99069800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.LoginSauceDmoStepDef.i_enter_password_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78056200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click on login",
+            "match": {
+              "location": "stepdefs.LoginSauceDmoStepDef.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38025000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should get error message \"Epic sadface: Sorry, this user has been locked out.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Sorry, this user has been locked out.\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefs.LoginSauceDmoStepDef.i_should_get_error_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "This feature will be used to test the login functionlity of saucedemo.com",
+    "description": "",
+    "id": "this-feature-will-be-used-to-test-the-login-functionlity-of-saucedemo.com",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/LoginSauceDemo.feature",
+    "tags": []
+  }
+]
