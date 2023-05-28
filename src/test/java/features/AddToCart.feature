@@ -6,7 +6,7 @@ Background:
     And Click on login
     
 
-Scenario: Login Success Scenario using parameters
-    When I click Add to cart in "Sauce Labs Backpack"
-    And I click add to cart for product "Sauce Labs Backpack"
+Scenario: Login Success Scenario using parameter
+   When I click add to cart for product "Sauce Labs Backpack"
+   And I click view cart to check product added
    Then I should be able to see the product as "Sauce Labs Backpack"

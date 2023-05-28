@@ -23,22 +23,26 @@ public class LoginSauceDmoStepDef {
 	}
 
 	@When("I enter password as {string}")
-	public void i_enter_password_as(String Password) {
+	public void i_enter_password_as(String Password) throws InterruptedException {
 		WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
 		password.sendKeys(Password);
+		Thread.sleep(3000);
 	}
 
 	@When("Click on login")
-	public void click_on_login() {
+	public void click_on_login() throws InterruptedException {
 		WebElement loginBtn = driver.findElement(By.xpath("//input[@name='login-button']"));
 		loginBtn.click();
+		Thread.sleep(3000);
 	}
 
 	@Then("I should be able to login successfully")
-	public void i_should_be_able_to_login_successfully() {
+	public void i_should_be_able_to_login_successfully() throws InterruptedException {
 		String expected_url = "https://www.saucedemo.com/inventory.html";
 		String actual_url = driver.getCurrentUrl();
 		Assert.assertEquals(expected_url, actual_url);
+
+		Thread.sleep(3000);
 	}
 
 	@Then("I should get error message {string}")

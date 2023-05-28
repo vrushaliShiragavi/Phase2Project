@@ -14,14 +14,6 @@ public class AddToCartStepDef {
 	List<String> addedProducts;
 	WebDriver driver = Hooks.driver;
 
-	@When("I click Add to cart in {string}")
-	public void i_click_Add_to_cart_in(String string) {
-		String xpath = "//div[@class='inventory_item_name' and text()='placeholder']";
-		String dynamic_xpath_product = xpath.replaceAll("placeholder", string);
-		WebElement product = driver.findElement(By.xpath(dynamic_xpath_product));
-
-	}
-
 	@When("I click add to cart for product {string}")
 	public void i_click_add_to_cart_for_product(String string) throws InterruptedException {
 		String xpath_toadd = "//div[@class='inventory_item_name' and text()='placeholder']/following::button[1]";
@@ -31,21 +23,21 @@ public class AddToCartStepDef {
 		shopping_cart.click();
 	}
 
-	@Then("I should be able to see the product")
-	public void i_should_be_able_to_see_the_product() {
-		WebElement added_product = driver.findElement(By.xpath("//div[@class='inventory_item_name']"));
-		String product_name = added_product.getText();
-
+	@When("I click view cart to check product added")
+	public void i_click_view_cart_to_check_product_added() {
+		// Write code here that turns the phrase above into concrete actions
+		WebElement cart = driver.findElement(By.xpath("//a[@class='shopping_cart_link']"));
+		cart.click();
 	}
 
 	@Then("I should be able to see the product as {string}")
-	public void i_should_be_able_to_see_the_product_as(String Expproduct) {
-		String placeholder_xpath = "//div[@class='inventory_item_name' and text()='placeholder']";
-		String dynamic_added_xpath = placeholder_xpath.replaceAll("placeholder", Expproduct);
-		WebElement added_product = driver.findElement(By.xpath(dynamic_added_xpath));
-		String actual_product_name = added_product.getText();
-
-		Assert.assertEquals(actual_product_name, Expproduct);
+	public void i_should_be_able_to_see_the_product_as(String Expproduct) throws InterruptedException {
+		WebElement productTitleOnCartPage = driver.findElement(By.xpath("//div[@class='inventory_item_name']"));
+		String actualProductName = productTitleOnCartPage.getText();
+		Thread.sleep(2000);
+		System.out.println("actualProductName  : " + actualProductName);
+		String expectedProductName = "Sauce Labs Backpack";
+		Assert.assertEquals(actualProductName, expectedProductName);
 	}
 
 }

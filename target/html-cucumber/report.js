@@ -53,26 +53,26 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Login Success Scenario using parameters",
+  "name": "Login Success Scenario using parameter",
   "description": "",
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "I click Add to cart in \"Sauce Labs Backpack\"",
+  "name": "I click add to cart for product \"Sauce Labs Backpack\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefs.AddToCartStepDef.i_click_Add_to_cart_in(java.lang.String)"
+  "location": "stepdefs.AddToCartStepDef.i_click_add_to_cart_for_product(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click add to cart for product \"Sauce Labs Backpack\"",
+  "name": "I click view cart to check product added",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefs.AddToCartStepDef.i_click_add_to_cart_for_product(java.lang.String)"
+  "location": "stepdefs.AddToCartStepDef.i_click_view_cart_to_check_product_added()"
 });
 formatter.result({
   "status": "passed"
